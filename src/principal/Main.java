@@ -17,16 +17,22 @@ public class Main {
         primeraPersona.setPesoAlturaC(pesoPersona1);
 
 
+        System.out.println("Introduzca el nombre");
+        primeraPersona.setNombre(sc.nextLine());
+        System.out.println("Introduzca el dni");
+        primeraPersona.setDNI(sc.nextLine());
+        System.out.println("Introduzca la edad");
+        primeraPersona.setEdad(sc.nextInt());
         System.out.println("Introduzca la altura");
         primeraPersona.pesoAlturaC.setAltura(sc.nextDouble());
         System.out.println("Introduzca el peso");
         primeraPersona.pesoAlturaC.setPeso(sc.nextDouble());
 
 
-        primeraPersona.setEdad(sc.nextInt());
+
 
         PersonaC copiaPrimeraPersona = primeraPersona.clone();
-        System.out.println(copiaPrimeraPersona.getEdad());
+        System.out.println(copiaPrimeraPersona.pesoAlturaC.getAltura());
 
 
 

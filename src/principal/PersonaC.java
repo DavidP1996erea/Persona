@@ -2,7 +2,7 @@ package principal;
 
 public class PersonaC implements Cloneable {
 
-    private String Nombre;
+    private String nombre;
     private int edad;
     private String DNI;
     PesoAlturaC pesoAlturaC;
@@ -13,12 +13,15 @@ public class PersonaC implements Cloneable {
     }
 
 
-    public PersonaC(int edad){
+    public PersonaC(int edad, String nombre, String dni, PesoAlturaC pesoAlturaC){
         this.edad=edad;
+        this.nombre=nombre;
+        this.DNI=dni;
+        this.pesoAlturaC=pesoAlturaC;
     }
 
   protected PersonaC clone() throws CloneNotSupportedException {
-       PersonaC clown = new PersonaC(edad);
+       PersonaC clown = new PersonaC(edad, nombre, DNI, pesoAlturaC );
         return clown;
     }
 
@@ -26,11 +29,11 @@ public class PersonaC implements Cloneable {
 
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        nombre = nombre;
     }
 
     public int getEdad() {
