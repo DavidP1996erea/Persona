@@ -1,7 +1,7 @@
 package principal;
 
 import java.util.Scanner;
-import java.lang.Object;
+
 
 public class Main {
 
@@ -32,8 +32,9 @@ public class Main {
 
 
         PersonaC copiaPrimeraPersona = primeraPersona.clone();
-        System.out.println(copiaPrimeraPersona.pesoAlturaC.getAltura());
 
+        System.out.println("La altura es: " + copiaPrimeraPersona.pesoAlturaC.getAltura());
+        System.out.println("El nombre es: " + copiaPrimeraPersona.getNombre());
 
 
 

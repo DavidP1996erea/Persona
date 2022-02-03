@@ -33,7 +33,7 @@ public class PersonaC implements Cloneable {
     }
 
     public void setNombre(String nombre) {
-        nombre = nombre;
+        this.nombre = nombre;
     }
 
     public int getEdad() {
