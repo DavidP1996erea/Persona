@@ -9,10 +9,10 @@ public class Main {
 	// write your code here
         Scanner sc = new Scanner(System.in);
         PesoAlturaC pesoPersona1 = new PesoAlturaC();
-       // PersonaC primeraPersona = new PersonaC();
+        PersonaC primeraPersona = new PersonaC();
 
 
-/*
+
 
         primeraPersona.setPesoAlturaC(pesoPersona1);
 
@@ -25,12 +25,12 @@ public class Main {
 
         primeraPersona.setEdad(sc.nextInt());
 
-      //  PersonaC copiaPrimeraPersona = primeraPersona.clone();
-     //   System.out.println(copiaPrimeraPersona.getEdad());
+        PersonaC copiaPrimeraPersona = primeraPersona.clone();
+        System.out.println(copiaPrimeraPersona.getEdad());
 
 
 
-*/
+
 
     }
 }

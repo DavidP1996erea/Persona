@@ -8,16 +8,21 @@ public class PersonaC implements Cloneable {
     PesoAlturaC pesoAlturaC;
 
 
-    public PersonaC(int edad){
+    public PersonaC(){
 
-        this.edad=0;
     }
-  /*  protected PersonaC clone() throws CloneNotSupportedException {
-       PersonaC clown = new PersonaC();
+
+
+    public PersonaC(int edad){
+        this.edad=edad;
+    }
+
+  protected PersonaC clone() throws CloneNotSupportedException {
+       PersonaC clown = new PersonaC(edad);
         return clown;
     }
 
-   */
+
 
 
     public String getNombre() {
